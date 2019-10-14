@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_item_height"
+    android:orientation="horizontal"
+    android:id="@+id/container">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:padding="4dp"
+        android:layout_marginStart="4dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/image">
+
+        <LinearLayout
+            android:id="@+id/text_container"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="@dimen/list_item_height"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="4dp">
+
+            <TextView
+                android:id="@+id/header_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:id="@+id/description_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/event_details"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/list_item_height"
+            android:orientation="vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+            <TextView
+                android:id="@+id/event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/deep_orange"
+                android:textStyle="bold"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:id="@+id/event_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/orange_dark"
+                android:textSize="14sp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

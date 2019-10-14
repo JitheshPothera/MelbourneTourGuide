@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Melbourne Tour Guide</string>
+    <string name="menu_discover">Discover</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_restaurant">Restaurants</string>
+    <string name="menu_information">Information</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">This is Discover Fragment</string>
+</resources>

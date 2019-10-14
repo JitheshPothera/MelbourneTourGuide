@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_discover"
+        android:enabled="true"
+        android:title="@string/menu_discover"
+        android:icon="@drawable/menu_discover"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_events"
+        android:enabled="true"
+        android:title="@string/menu_events"
+        android:icon="@drawable/menu_events"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_restaurants"
+        android:enabled="true"
+        android:title="@string/menu_restaurant"
+        android:icon="@drawable/menu_restaurant"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_information"
+        android:enabled="true"
+        android:title="@string/menu_information"
+        android:icon="@drawable/menu_information"
+        app:showAsAction="ifRoom" />
+
+</menu>
